@@ -35,7 +35,12 @@
   margin-top: var(--spacing-sm);
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
+}
+
+.login__main__buttons {
+  margin-top: var(--spacing-sm);
 }
 
 .login__picture {

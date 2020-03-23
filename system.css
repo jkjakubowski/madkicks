@@ -190,7 +190,7 @@ input[type="submit"] {
   display: block;
   width: 100%;
   margin-top: var(--spacing-xs);
-  font-size: var(--text-body1);
+  font-size: var(--text-body2);
   border: none;
 }
 
