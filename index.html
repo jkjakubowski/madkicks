@@ -5,36 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MadKicks</title>
   <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="system.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="login">
-    <img src="img/logo.svg" alt="logo" srcset="">
-    <h1 class="login__title">Connected shoes that improve your football skills</h1>
-    <p class="login__description">Welcome back, please log in to your account and see your progress</p>
-    <form>
-      <!-- Email -->
-      <label>
-        Email address
-        <input type="email" placeholder="Your email" />
-      </label>
-      <!-- Password -->
-      <label>
-        <input type="password" placeholder="Your password"/>
-      </label>
-      <!-- Remember session -->
-      <label>
-        <input type="checkbox">
-        Remember me
-      </label>
-      <!-- Forgot password -->
-      <button type="button">Forgot password?</button>
-      <!-- Buttons row -->
-      <div>
-        <input class="btn" type="submit" value="Log in" />
-        <input class="btn-outlined" type="button" value="Sign up" />
-      </div>
-    </form>
+    <!-- Left column for the form -->
+    <main class="login__main">
+      <a class="login__main__logo" href="#">
+        <img class="login__main__logo__img" src="img/logo.svg" alt="Madkicks">
+      </a>
+      <h1 class="login__main__title">Connected shoes that improve your football skills</h1>
+      <p class="login__main__description">Log in to get your shoes</p>
+      <form>
+        <!-- Email -->
+        <div class="field">
+          <label>
+            Email address
+            <input type="email" placeholder="Your email" />
+          </label>
+        </div>
+        <!-- Password -->
+        <label>
+          Password
+          <input type="password" placeholder="Your password"/>
+        </label>
+        <!-- Remember session -->
+        <label>
+          <input type="checkbox">
+          Remember me
+        </label>
+        <!-- Forgot password -->
+        <button type="button" class="btn-ghost">Forgot password?</button>
+        <!-- Buttons row -->
+        <div>
+          <input class="btn" type="submit" value="Log in" />
+          <input class="btn-outlined" type="button" value="Sign up" />
+        </div>
+      </form>
+    </main>
+    <!-- Right side for the image -->
+    <aside class="login__picture">
+      <img class="login__picture__img" src="img/football-boots.jpg" alt="Football boots" />
+    </aside>
   </div>
 </body>
 </html>

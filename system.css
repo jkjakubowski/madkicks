@@ -1,0 +1,221 @@
+/* Define design tokens */
+:root {
+  /* Purple */
+  --color-purple-50: #F2E7FE;
+  --color-purple-100: #DBB2FF;
+  --color-purple-200: #BB86FC;
+  --color-purple-300: #985EFF;
+  --color-purple-400: #7F39FB;
+  --color-purple-500: #6200EE;
+  --color-purple-600: #5600E8;
+  --color-purple-700: #3700B3;
+  --color-purple-800: #30009C;
+  --color-purple-900: #23036A;
+
+  /* Green */
+  --color-green-50: #69FEA6;
+  --color-green-100: #5BFF9F;
+  --color-green-200: #40FF8F;
+  --color-green-300: #25FE7E;
+  --color-green-400: #0AFF6E;
+  --color-green-500: #00EE62;
+  --color-green-600: #00D658;
+  --color-green-700: #00BE4E;
+  --color-green-800: #00A644;
+  --color-green-900: #008E3A;
+
+  /* Grey */
+  --color-grey-50: #F2F2F2;
+  --color-grey-100: #E6E6E6;
+  --color-grey-200: #CCCCCC;
+  --color-grey-300: #B3B3B3;
+  --color-grey-400: #999999;
+  --color-grey-500: #808080;
+  --color-grey-600: #666666;
+  --color-grey-700: #4D4D4D;
+
+  /* Other colors */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-alert: #FF3B30;
+  --color-warning: #FF832B;
+  --color-waiting: #FDD13A;
+  --color-valid: #24A148;
+  
+  /* Spacing units */
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-base: 24px;
+  --spacing-md: 32px;
+  --spacing-lg: 48px;
+  --spacing-xl: 64px;
+
+  /* Typeface scale */
+  --text-body1: 12px;
+  --text-body2: 14px;
+  --text-label: 16px;
+  --text-title6: 16px;
+  --text-title5: 18px;
+  --text-title4: 24px;
+  --text-title3: 36px;
+  --text-title2: 48px;
+  --text-title1: 60px;
+
+  /* Border radius */
+  --radius-base: 4px;
+
+  /* Device screen sizes */
+  --screen-mobile: 300px;
+  --screen-tablet: 600px;
+  --screen-desktop: 900px;
+}
+
+/* Generic styles */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Base styles */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: var(--text-body2);
+}
+
+ul {
+  list-style: circle outside;
+}
+
+label {
+  display: block;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  all: unset;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/* Objects */
+
+.container {
+  width: 900px;
+  max-width: calc(100vw - var(--spacing-xs) * 2);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.field {
+  border: 1px solid var(--color-grey-200);
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-base);
+}
+
+.field label {
+  font-size: var(--text-label);
+  display: block;
+  color: var(--color-purple-900);
+}
+
+.field input {
+  display: block;
+  width: 100%;
+  margin-top: var(--spacing-xs);
+  font-size: var(--text-body1);
+  border: none;
+}
+
+.field input::placeholder {
+  color: var(--color-grey-200);
+}
+
+/* contained button*/ 
+.btn {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--text-label);
+  border-radius: var(--radius-base);
+  background: var(--color-purple-500);
+  color: var(--color-white);
+}
+
+.btn:focus {
+  background: var(--color-purple-300);
+}
+
+.btn:hover {
+  background: var(--color-purple-600);
+}
+
+.btn:active {
+  background: var(--color-purple-800);
+}
+
+.btn:disabled {
+  background: var(--color-purple-50);
+}
+
+/* outlined button */ 
+.btn-outlined {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--text-label);
+  border-radius: var(--radius-base);
+  border: solid 1px var(--color-purple-500);
+  color: var(--color-purple-500);
+}
+
+.btn-outlined:focus {
+  background: var(--color-purple-100);
+}
+
+.btn-outlined:hover {
+  background: var(--color-purple-50);
+}
+
+.btn-outlined:active {
+  background: var(--color-purple-500);
+  color: var(--color-white);
+  border: none;
+}
+
+.btn-outlined:disabled {
+  color: var(--color-purple-50);
+  border: var(--color-purple-50);
+}
+
+/* ghost button */
+
+.btn-ghost {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--text-label);
+  border-radius: var(--radius-base);
+  color: var(--color-purple-500);
+}
+
+.btn-ghost:focus {
+  color: var(--color-purple-500);
+  background:var(--color-purple-100);
+}
+
+.btn-ghost:hover {
+  color: var(--color-purple-500);
+  background:var(--color-purple-50);
+}
+
+.btn-ghost:active {
+  color: var(--color-white);
+  background:var(--color-purple-300);
+}
+
+.btn-ghost:hover {
+  color: var(--color-purple-100);
+}
