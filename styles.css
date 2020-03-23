@@ -35,21 +35,12 @@
   --color-grey-700: #4D4D4D;
 
   /* Other colors */
-  --theme-white: #FFFFFF;
-  --theme-black: #000000;
-  --theme-alert: #FF3B30;
-  --theme-warning: #FF832B;
-  --theme-waiting: #FDD13A;
-  --theme-valid: #24A148;
-
-  
-  /* Spacing units */
-  --spacing-xs: 8px;
-  --spacing-sm: 16px;
-  --spacing-base: 24px;
-  --spacing-md: 32px;
-  --spacing-lg: 48px;
-  --spacing-xl: 64px;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-alert: #FF3B30;
+  --color-warning: #FF832B;
+  --color-waiting: #FDD13A;
+  --color-valid: #24A148;
   
   /* Spacing units */
   --spacing-xs: 8px;
@@ -59,9 +50,114 @@
   --spacing-lg: 48px;
   --spacing-xl: 64px;
 
+  /* Typeface scale */
+  --text-body1: 12px;
+  --text-body2: 14px;
+  --text-label: 16px;
+  --text-title6: 16px;
+  --text-title5: 18px;
+  --text-title4: 24px;
+  --text-title3: 36px;
+  --text-title2: 48px;
+  --text-title1: 60px;
 
+  /* Border radius */
+  --radius-base: 4px;
+
+  /* Device screen sizes */
+  --screen-mobile: 300px;
+  --screen-tablet: 600px;
+  --screen-desktop: 900px;
 }
 
-h1 {
-  color: var(--color-main);
+/* Generic styles */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Base styles */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: var(--text-body2);
+}
+
+ul {
+  list-style: circle outside;
+}
+
+/* Objects */
+
+.container {
+  width: 900px;
+  max-width: calc(100vw - var(--spacing-xs) * 2);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-3 {
+  font-size: var(--text-title6);
+}
+
+/* contained button*/ 
+.btn {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background: var(--color-purple-500);
+  color: var(--color-white);
+}
+
+.btn:focus {
+  background: var(--color-purple-300);
+}
+
+.btn:hover {
+  background: var(--color-purple-600);
+}
+
+.btn:active {
+  background: var(--color-purple-800);
+}
+
+.btn:disabled {
+  background: var(--color-purple-50);
+}
+
+/* outlined button */ 
+.btn-outlined {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border: solid 1px var(--color-purple-500);
+  color: var(--color-purple-500);
+}
+
+.btn-outlined:focus {
+  background: var(--color-purple-100);
+}
+
+.btn-outlined:hover {
+  background: var(--color-purple-50);
+}
+
+.btn-outlined:active {
+  background: var(--color-purple-500);
+  color: var(--color-white);
+  border: none;
+}
+
+.btn-outlined:disabled {
+  color: var(--color-purple-50);
+  border: var(--color-purple-50);
+}
+
+/* ghost button */
+
+.btn-ghost {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--);
+  color: var(--color-purple-500);
+}
+
+.btn-ghost-focus {
+  color: var(--color-purple-500);
+  background:var(--color-purple-100);
 }

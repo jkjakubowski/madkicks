@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MadKicks</title>
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div>
-    <a href="#">MadKicks</a>
-    <h1>Connected shoes to improve your football skills</h1>
-    <p>Welcome back, please log in to your account and see your progress</p>
+  <div class="login">
+    <img src="img/logo.svg" alt="logo" srcset="">
+    <h1 class="login__title">Connected shoes that improve your football skills</h1>
+    <p class="login__description">Welcome back, please log in to your account and see your progress</p>
     <form>
       <!-- Email -->
       <label>
@@ -30,8 +31,8 @@
       <button type="button">Forgot password?</button>
       <!-- Buttons row -->
       <div>
-        <input type="submit" value="Log in" />
-        <input type="button" value="Sign up" />
+        <input class="btn" type="submit" value="Log in" />
+        <input class="btn-outlined" type="button" value="Sign up" />
       </div>
     </form>
   </div>
