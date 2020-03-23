@@ -19,11 +19,16 @@
 .login__main__title {
   margin: var(--spacing-xl) 0;
   font-size: var(--text-title3);
-  font: "Manrope" regular;
+  font-weight: 500;
 }
 
 .login__main__description {
   margin-bottom: var(--spacing-md);
+  color: var(--grey-400);
+}
+
+.login__main__password {
+  margin-top: var(--spacing-sm);
 }
 
 .login__picture {
