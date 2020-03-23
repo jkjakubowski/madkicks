@@ -1,5 +1,65 @@
+/* Define design tokens */
 :root {
-  --color-main: #ff0000;
+  /* Purple */
+  --color-purple-50: #F2E7FE;
+  --color-purple-100: #DBB2FF;
+  --color-purple-200: #BB86FC;
+  --color-purple-300: #985EFF;
+  --color-purple-400: #7F39FB;
+  --color-purple-500: #6200EE;
+  --color-purple-600: #5600E8;
+  --color-purple-700: #3700B3;
+  --color-purple-800: #30009C;
+  --color-purple-900: #23036A;
+
+  /* Green */
+  --color-green-50: #69FEA6;
+  --color-green-100: #5BFF9F;
+  --color-green-200: #40FF8F;
+  --color-green-300: #25FE7E;
+  --color-green-400: #0AFF6E;
+  --color-green-500: #00EE62;
+  --color-green-600: #00D658;
+  --color-green-700: #00BE4E;
+  --color-green-800: #00A644;
+  --color-green-900: #008E3A;
+
+  /* Grey */
+  --color-grey-50: #F2F2F2;
+  --color-grey-100: #E6E6E6;
+  --color-grey-200: #CCCCCC;
+  --color-grey-300: #B3B3B3;
+  --color-grey-400: #999999;
+  --color-grey-500: #808080;
+  --color-grey-600: #666666;
+  --color-grey-700: #4D4D4D;
+
+  /* Other colors */
+  --theme-white: #FFFFFF;
+  --theme-black: #000000;
+  --theme-alert: #FF3B30;
+  --theme-warning: #FF832B;
+  --theme-waiting: #FDD13A;
+  --theme-valid: #24A148;
+
+  
+  /* Spacing units */
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-base: 24px;
+  --spacing-md: 32px;
+  --spacing-lg: 48px;
+  --spacing-xl: 64px;
+  
+  /* Spacing units */
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-base: 24px;
+  --spacing-md: 32px;
+  --spacing-lg: 48px;
+  --spacing-xl: 64px;
+
+
 }
 
 h1 {
